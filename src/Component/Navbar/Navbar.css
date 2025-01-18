@@ -1,0 +1,72 @@
+/* التصميم العام للـ Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: white;
+    position: relative; /* لإضافة z-index */
+  }
+  
+  /* تصميم العنوان */
+  .navbar h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  /* تصميم القائمة */
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-menu li {
+    margin-left: 1.5rem;
+  }
+  
+  .nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .nav-menu li.active a {
+    color: #ffcc00; /* لون النص عند التحديد */
+  }
+  
+  /* زر القائمة (يظهر فقط في الشاشات الصغيرة) */
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* تصميم القائمة في الشاشات الصغيرة */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      background-color: #333;
+      z-index: 1000; /* لجعل القائمة تظهر فوق العناصر الأخرى */
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .nav-menu li {
+      margin: 1rem 0;
+      text-align: center;
+    }
+  }

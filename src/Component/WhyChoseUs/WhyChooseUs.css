@@ -1,0 +1,61 @@
+.why-choose-us {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .why-choose-us p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+  }
+  
+  .why-choose-us ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .why-choose-us ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .why-choose-us ul li::before {
+    content: "•";
+    color: #007bff;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: -4px;
+  }
+  
+  .why-choose-us ul li strong {
+    color: #007bff;
+  }
+  
+  /* تصميم للهواتف المحمولة */
+  @media (max-width: 768px) {
+    .why-choose-us h2 {
+      font-size: 28px;
+    }
+  
+    .why-choose-us p {
+      font-size: 16px;
+    }
+  
+    .why-choose-us ul li {
+      font-size: 14px;
+    }
+  }

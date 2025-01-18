@@ -1,0 +1,76 @@
+.Explore_Mune {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .Explore_Mune h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .Explore_mune_text {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    line-height: 1.8;
+  }
+  
+  .explore_mune_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 عناصر في كل صف */
+    gap: 20px; /* المسافة بين العناصر */
+    max-width: 1200px; /* تحديد عرض القائمة */
+    margin: 0 auto; /* توسيط القائمة */
+  }
+  
+  .explore_item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden; /* لإخفاء أي جزء زائد من الصورة */
+    position: relative; /* لتحديد موقع الطبقة والنص بشكل مطلق داخل العنصر */
+  }
+  
+  .explore_item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .explore_item.active {
+    border-color: #007bff;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .explore_item img {
+    width: 100%; /* الصورة تأخذ العرض الكامل */
+    height: 100%; /* الصورة تأخذ الارتفاع الكامل */
+    object-fit: cover; /* الحفاظ على نسبة العرض إلى الارتفاع */
+    display: block; /* لإزالة المسافة الإضافية أسفل الصورة */
+  }
+  
+  .overlay {
+    position: absolute; /* وضع الطبقة فوق الصورة */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* طبقة شبه شفافة */
+    display: flex;
+    justify-content: center; /* توسيط النص أفقيًا */
+    align-items: center; /* توسيط النص عموديًا */
+    opacity: 1; /* إظهار الطبقة دائمًا */
+  }
+  
+  .overlay p {
+    color: #fff; /* لون النص */
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0;
+  }

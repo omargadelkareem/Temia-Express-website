@@ -1,0 +1,37 @@
+/* تصميم حاوية الـ Slider */
+.slider-container {
+    width: 100%;
+    max-width: 1200px; /* يمكنك تعديل العرض حسب الحاجة */
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* تصميم الصور داخل الشرائح */
+  .slide-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* زوايا مدورة */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+  }
+  
+  /* تصميم نقاط التبديل (Pagination) */
+  .swiper-pagination-bullet {
+    background-color: #fff; /* لون النقاط */
+    opacity: 0.5;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #007aff; /* لون النقطة النشطة */
+    opacity: 1;
+  }
+  
+  /* تصميم أسهم التنقل (Navigation) */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #007aff; /* لون الأسهم */
+  }
+  
+  .swiper-button-next:hover,
+  .swiper-button-prev:hover {
+    color: #005bb5; /* لون الأسهم عند التمرير */
+  }

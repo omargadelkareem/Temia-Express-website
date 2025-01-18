@@ -1,0 +1,62 @@
+.transport-benefits {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .transport-benefits h2 {
+    font-size: 32px;
+    color: #007bff;
+    margin-bottom: 20px;
+  }
+  
+  .transport-benefits p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  
+  .transport-benefits ul {
+    list-style-type: none;
+    padding: 0;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .transport-benefits ul li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 20px;
+    position: relative;
+  }
+  
+  .transport-benefits ul li::before {
+    content: "•";
+    color: #007bff;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: -4px;
+  }
+  
+  .transport-benefits ul li strong {
+    color: #007bff;
+  }
+  
+  /* تصميم للهواتف المحمولة */
+  @media (max-width: 768px) {
+    .transport-benefits h2 {
+      font-size: 28px;
+    }
+  
+    .transport-benefits p {
+      font-size: 16px;
+    }
+  
+    .transport-benefits ul li {
+      font-size: 14px;
+    }
+  }

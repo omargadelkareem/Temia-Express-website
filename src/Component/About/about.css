@@ -1,0 +1,94 @@
+.about_content{
+    display: flex;
+    width: 100%;
+}
+
+.about{
+    padding: 20px;
+}
+
+.about h1{
+    margin-bottom: 3%;
+}
+
+.about_content .abput_img{
+    width: 50%;
+    
+}
+
+.abput_img img{
+    width: 100%;
+   
+}
+
+.desc {
+    max-width: 600px; /* تحديد عرض النص */
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* ظل ناعم */
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  .desc h5 {
+    font-size: 1.2rem;
+    color: rgba(2, 106, 117, 1); /* لون مميز */
+    margin-bottom: 10px;
+    text-transform: uppercase; /* تحويل النص إلى أحرف كبيرة */
+    letter-spacing: 1px; /* زيادة المسافة بين الحروف */
+  }
+  
+  .desc h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.3;
+    position: relative;
+  }
+  
+  .desc h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: #f45d5d; /* خط تحت العنوان */
+    border-radius: 2px;
+  }
+  
+  .desc p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  .desc button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    color: white;
+    background: linear-gradient(90deg, #f45d5d, #ff4500); /* تدرج لوني للزر */
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(244, 93, 93, 0.3); /* ظل للزر */
+  }
+  
+  .desc button:hover {
+    transform: translateY(-5px); /* حركة خفيفة عند التمرير */
+    box-shadow: 0 8px 20px rgba(244, 93, 93, 0.5); /* زيادة الظل عند التمرير */
+  }
+  
+  /* Animations */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
