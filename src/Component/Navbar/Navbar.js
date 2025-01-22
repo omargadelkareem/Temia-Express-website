@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa'; // أيقونات القائمة
 import { Link } from 'react-router-dom';
+import LogoImage from '../../assets/assets'
+
 
 function Navbar({ setShowLogin }) {
   const [menue, setMenue] = useState("home");
@@ -16,7 +18,7 @@ function Navbar({ setShowLogin }) {
     <div className='navbar'>
       <h1
       >
-        تيما اكسبريس
+      <img className='logo' src={LogoImage} alt='' />
       </h1>
 
       {/* زر القائمة (يظهر فقط في الشاشات الصغيرة) */}

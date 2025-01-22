@@ -25,6 +25,10 @@ import Image5 from  './Slide5.jpg';
 import Image6 from './Slide6.png'
 
 
+import LogoImage from './tema 2.png';
+
+export default LogoImage;
+
 export const SliderImages = [
   Image1,
   Image5,
