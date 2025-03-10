@@ -8,6 +8,7 @@ import './home.css';
 import WhyChooseUs from '../WhyChoseUs/WhyChoseUs';
 import TransportBenefits from '../TransportBenefits/TransportBenefits';
 import Slider from '../Slider/Slider';
+import { Helmet } from 'react-helmet-async';
 
 function Home() {
   const [category, setCategory] = useState("All");
@@ -42,6 +43,11 @@ function Home() {
 
   return (
     <div className='home'>
+      <Helmet>
+        <title>شركه نقل عفش في المنطقه الجنوبيه</title>
+        <meta name='description' content='شركه نقل عفش في المنطقه الجنوبيه| شركه نقل عفش في السعوديه | شركه نقل عفش بخميس مشيط' />
+        <meta name='keywords' content='شركه نقل عفش في المنطقه الجنوبيه, شركه نقل عفش في السعوديه, شركه نقل عفش بخميس مشيط' />
+      </Helmet>
       {showSplash ? (
         <div className="splash-screen">
           <h1>   تيما اكسبريس مرحبا بك </h1>
